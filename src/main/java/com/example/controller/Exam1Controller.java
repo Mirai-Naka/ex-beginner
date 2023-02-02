@@ -17,7 +17,7 @@ public class Exam1Controller {
 
 	@PostMapping("/input")
 	public String input(String name, Model model) {
-		model.addAttribute(name);
+		model.addAttribute("name",name);
 		return "exam01-result";
 	}
 }
