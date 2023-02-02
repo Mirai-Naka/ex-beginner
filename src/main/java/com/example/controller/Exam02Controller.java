@@ -12,7 +12,7 @@ import com.example.form.SumForm;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("/exam2")
+@RequestMapping("/exam02")
 public class Exam02Controller {
 
 	@Autowired
@@ -35,5 +35,10 @@ public class Exam02Controller {
 		session.setAttribute("result", result);
 
 		return "exam02-result";
+	}
+
+	@GetMapping("/result")
+	public String result() {
+		return "exam02-result2";
 	}
 }
