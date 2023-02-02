@@ -1,6 +1,6 @@
 package com.example.form;
 
-public class Sum {
+public class SumForm {
 
 	private String num1;
 	private String num2;
